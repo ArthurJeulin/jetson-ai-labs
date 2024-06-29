@@ -30,6 +30,23 @@
         }
       },
       {
+        "name": "default-cpp-cuda",
+        "displayName": "Construction par défaut CPP Cuda",
+        "description": "Préréglage pour une construction par défaut avec Unix Makefiles, incluant le support CUDA",
+        "binaryDir": "${sourceDir}/build",
+        "generator": "Unix Makefiles",
+        "cacheVariables": {
+          "CMAKE_CXX_COMPILER": "g++",
+          "CMAKE_C_COMPILER": "gcc",
+          "CMAKE_CUDA_COMPILER": "/usr/local/cuda/bin/nvcc",
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
+          "BUILD_SHARED_LIBS": "OFF",
+          "CMAKE_CXX_STANDARD": "20",
+          "CMAKE_CUDA_STANDARD": "20",
+          "CMAKE_CUDA_ARCHITECTURES": "87" 
+        }
+      },
+      {
         "name": "x64-windows",
         "displayName": "Windows x64",
         "description": "Configure with Visual Studio 16 2019 on Windows",
