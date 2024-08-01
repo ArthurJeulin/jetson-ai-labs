@@ -6,3 +6,4 @@
 cmake_minimum_required(VERSION 3.27.5)
 
 add_subdirectory(my-recognition)
+add_subdirectory(segnet)
